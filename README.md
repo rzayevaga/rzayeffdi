@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="assets/rzayeffdi.svg" alt="RZAYEFFDI Animated Logo" width="800" />
+  <a href="https://rzayeffdi.tech" target="_blank">
+    <img src="assets/rzayeffdi.svg" alt="RZAYEFFDI" width="800" />
+  </a>
 </p>
 
 ----
