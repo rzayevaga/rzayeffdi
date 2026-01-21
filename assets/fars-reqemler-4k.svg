@@ -42,12 +42,15 @@
       .title { font-family: Vazirmatn, "Noto Sans Arabic", "Noto Naskh Arabic", "Segoe UI", Arial, sans-serif; font-weight: 800; }
       .subtitle { font-family: Vazirmatn, "Noto Sans Arabic", "Noto Naskh Arabic", "Segoe UI", Arial, sans-serif; font-weight: 600; }
       .ui { font-family: Vazirmatn, "Noto Sans Arabic", "Noto Naskh Arabic", "Segoe UI", Arial, sans-serif; }
-      .hdr { font-size: 46px; font-weight: 800; fill: #FFFFFF; opacity: 0.92; }
-      .note { font-size: 30px; fill: #D7E3FF; opacity: 0.92; }
-      .small { font-size: 26px; fill: #E9F0FF; opacity: 0.90; }
-      .cell { font-size: 30px; fill: #F3F7FF; opacity: 0.95; }
-      .pers { font-size: 32px; fill: #FFFFFF; opacity: 0.96; }
-      .persWord { font-size: 30px; fill: #EAF2FF; opacity: 0.96; }
+
+      /* slightly tighter sizing */
+      .hdr { font-size: 44px; font-weight: 800; fill: #FFFFFF; opacity: 0.92; }
+      .note { font-size: 28px; fill: #D7E3FF; opacity: 0.92; }
+      .small { font-size: 25px; fill: #E9F0FF; opacity: 0.90; }
+      .cell { font-size: 28px; fill: #F3F7FF; opacity: 0.95; }
+      .pers { font-size: 30px; fill: #FFFFFF; opacity: 0.96; }
+      .persWord { font-size: 28px; fill: #EAF2FF; opacity: 0.96; }
+
       .accent { fill: url(#gold); }
       .line { stroke: #FFFFFF; stroke-opacity: 0.14; stroke-width: 2; }
       .border { stroke: url(#gold); stroke-width: 6; fill: none; opacity: 0.95; }
@@ -81,11 +84,6 @@
   <text x="1920" y="318" text-anchor="middle" class="subtitle" font-size="34" fill="#E9F0FF" opacity="0.92"
         direction="rtl" unicode-bidi="plaintext">اللهم صل على محمد وآل محمد</text>
 
-  <!-- Columns layout constants (visual only):
-       Left:  x=140   w=1133
-       Mid:   x=1353  w=1133
-       Right: x=2566  w=1133
-  -->
   <!-- LEFT COLUMN -->
   <g filter="url(#shadow)">
     <rect x="140" y="360" width="1133" height="1690" rx="34" ry="34" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
@@ -95,15 +93,12 @@
   <text x="190" y="430" class="hdr">🔢 [0–9]</text>
   <line x1="190" y1="460" x2="1210" y2="460" class="line"/>
 
-  <!-- Header row -->
   <text x="190" y="505" class="small" fill="#CFE0FF" opacity="0.95">Rəqəm</text>
   <text x="360" y="505" class="small" fill="#CFE0FF" opacity="0.95">Fars rəqəmi</text>
   <text x="560" y="505" class="small" fill="#CFE0FF" opacity="0.95">Farsca söz</text>
   <text x="840" y="505" class="small" fill="#CFE0FF" opacity="0.95">Transkripsiya</text>
   <text x="1040" y="505" class="small" fill="#CFE0FF" opacity="0.95">Az. oxunuşu</text>
 
-  <!-- Rows [0-9] -->
-  <!-- y start 560, step 58 -->
   <g>
     <text x="190" y="560" class="cell">0</text>
     <text x="370" y="560" class="pers">۰</text>
@@ -237,7 +232,6 @@
     <rect x="1353" y="360" width="1133" height="1690" rx="34" ry="34" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
   </g>
 
-  <!-- MID: [20–99] onluqlar -->
   <text x="1403" y="430" class="hdr">🔢 [20–99] (onluqlar)</text>
   <line x1="1403" y1="460" x2="2440" y2="460" class="line"/>
 
@@ -297,7 +291,6 @@
     <text x="2253" y="966" class="cell">doxsan</text>
   </g>
 
-  <!-- MID: ƏSAS QAYDA -->
   <text x="1403" y="1065" class="hdr">📌 ƏSAS QAYDA (çox vacib)</text>
   <line x1="1403" y1="1095" x2="2440" y2="1095" class="line"/>
   <text x="1403" y="1140" class="note">Farscada onluq + birlik “و” (o) ilə bağlanır.</text>
@@ -308,26 +301,25 @@
   <g>
     <text x="1403" y="1308" class="cell">21 →</text>
     <text x="1540" y="1308" class="pers">۲۱</text>
-    <text x="1710" y="1308" class="persWord" direction="rtl" unicode-bidi="plaintext">بیست و یک</text>
+    <text x="2000" y="1308" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">بیست و یک</text>
     <text x="2070" y="1308" class="cell">bist o yek</text>
 
     <text x="1403" y="1366" class="cell">34 →</text>
     <text x="1540" y="1366" class="pers">۳۴</text>
-    <text x="1710" y="1366" class="persWord" direction="rtl" unicode-bidi="plaintext">سی و چهار</text>
+    <text x="2000" y="1366" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">سی و چهار</text>
     <text x="2070" y="1366" class="cell">si o çahâr</text>
 
     <text x="1403" y="1424" class="cell">58 →</text>
     <text x="1540" y="1424" class="pers">۵۸</text>
-    <text x="1710" y="1424" class="persWord" direction="rtl" unicode-bidi="plaintext">پنجاه و هشت</text>
+    <text x="2000" y="1424" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">پنجاه و هشت</text>
     <text x="2070" y="1424" class="cell">panjâh o hešt</text>
 
     <text x="1403" y="1482" class="cell">99 →</text>
     <text x="1540" y="1482" class="pers">۹۹</text>
-    <text x="1710" y="1482" class="persWord" direction="rtl" unicode-bidi="plaintext">نود و نه</text>
+    <text x="2000" y="1482" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">نود و نه</text>
     <text x="2070" y="1482" class="cell">navad o noh</text>
   </g>
 
-  <!-- MID: [100] and [200–900] -->
   <text x="1403" y="1585" class="hdr">🔢 [100]</text>
   <line x1="1403" y1="1615" x2="2440" y2="1615" class="line"/>
 
@@ -373,7 +365,6 @@
     <rect x="2566" y="360" width="1133" height="1690" rx="34" ry="34" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
   </g>
 
-  <!-- RIGHT: continue hundreds 600-900 -->
   <text x="2616" y="430" class="hdr">🔢 [600–900] (davam)</text>
   <line x1="2616" y1="460" x2="3650" y2="460" class="line"/>
 
@@ -409,95 +400,91 @@
     <text x="3466" y="734" class="cell">doqquz yüz</text>
   </g>
 
-  <!-- RIGHT: YÜZLÜK QAYDASI -->
-  <text x="2616" y="835" class="hdr">📌 YÜZLÜK QAYDASI</text>
-  <line x1="2616" y1="865" x2="3650" y2="865" class="line"/>
+  <!-- RIGHT: compressed blocks (moved up to fit) -->
+  <text x="2616" y="780" class="hdr">📌 YÜZLÜK QAYDASI</text>
+  <line x1="2616" y1="810" x2="3650" y2="810" class="line"/>
 
-  <text x="2616" y="910" class="note">Əgər yüzlükdən sonra başqa ədəd gəlirsə, yenə “و” işlənir.</text>
-  <text x="2616" y="955" class="note">Formul: <tspan class="accent">yüzlük + و + qalan hissə</tspan></text>
+  <text x="2616" y="850" class="note">Əgər yüzlükdən sonra başqa ədəd gəlirsə, yenə “و” işlənir.</text>
+  <text x="2616" y="892" class="note">Formul: <tspan class="accent">yüzlük + و + qalan hissə</tspan></text>
 
-  <text x="2616" y="1018" class="subtitle" font-size="38" fill="#FFFFFF" opacity="0.95">Nümunələr👇:</text>
-
-  <g>
-    <text x="2616" y="1076" class="cell">501 →</text>
-    <text x="2760" y="1076" class="pers">۵۰۱</text>
-    <text x="2950" y="1076" class="persWord" direction="rtl" unicode-bidi="plaintext">پانصد و یک</text>
-    <text x="3360" y="1076" class="cell">pânsad o yek</text>
-
-    <text x="2616" y="1134" class="cell">555 →</text>
-    <text x="2760" y="1134" class="pers">۵۵۵</text>
-    <text x="2950" y="1134" class="persWord" direction="rtl" unicode-bidi="plaintext">پانصد و پنجاه و پنج</text>
-    <text x="3360" y="1134" class="cell">pânsad o panjâh o penc</text>
-
-    <text x="2616" y="1192" class="cell">620 →</text>
-    <text x="2760" y="1192" class="pers">۶۲۰</text>
-    <text x="2950" y="1192" class="persWord" direction="rtl" unicode-bidi="plaintext">ششصد و بیست</text>
-    <text x="3360" y="1192" class="cell">šešsad o bist</text>
-
-    <text x="2616" y="1250" class="cell">748 →</text>
-    <text x="2760" y="1250" class="pers">۷۴۸</text>
-    <text x="2950" y="1250" class="persWord" direction="rtl" unicode-bidi="plaintext">هفتصد و چهل و هشت</text>
-    <text x="3360" y="1250" class="cell">haftsad o çehel o hešt</text>
-  </g>
-
-  <!-- RIGHT: Warning -->
-  <g>
-    <rect x="2616" y="1315" width="1034" height="120" rx="24" ry="24" fill="#000000" opacity="0.22" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
-    <text x="2648" y="1360" class="note">⚠️ Burda heç vaxt vergül, tire, başqa bağlayıcı YOXDUR.</text>
-    <text x="2648" y="1403" class="note">Hər şey <tspan class="accent">و</tspan> ilə bağlanır.</text>
-  </g>
-
-  <!-- RIGHT: Thousands -->
-  <text x="2616" y="1525" class="hdr">🔢 [Min və yuxarısı]</text>
-  <line x1="2616" y1="1555" x2="3650" y2="1555" class="line"/>
+  <text x="2616" y="940" class="subtitle" font-size="36" fill="#FFFFFF" opacity="0.95">Nümunələr👇:</text>
 
   <g>
-    <text x="2616" y="1610" class="cell">1000</text>
-    <text x="2796" y="1610" class="pers">۱۰۰۰</text>
-    <text x="2986" y="1610" class="persWord" direction="rtl" unicode-bidi="plaintext">هزار</text>
-    <text x="3266" y="1610" class="cell">hezâr</text>
-    <text x="3466" y="1610" class="cell">min</text>
+    <text x="2616" y="980" class="cell">501 →</text>
+    <text x="2760" y="980" class="pers">۵۰۱</text>
+    <text x="3635" y="980" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">پانصد و یک</text>
+    <text x="3200" y="980" class="cell">pânsad o yek</text>
 
-    <text x="2616" y="1668" class="cell">10.000</text>
-    <text x="2796" y="1668" class="pers">۱۰٬۰۰۰</text>
-    <text x="2986" y="1668" class="persWord" direction="rtl" unicode-bidi="plaintext">ده هزار</text>
-    <text x="3266" y="1668" class="cell">dah hezâr</text>
-    <text x="3466" y="1668" class="cell">on min</text>
+    <text x="2616" y="1030" class="cell">555 →</text>
+    <text x="2760" y="1030" class="pers">۵۵۵</text>
+    <text x="3635" y="1030" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">پانصد و پنجاه و پنج</text>
+    <text x="3200" y="1030" class="cell">pânsad o panjâh o penc</text>
 
-    <text x="2616" y="1726" class="cell">100.000</text>
-    <text x="2796" y="1726" class="pers">۱۰۰٬۰۰۰</text>
-    <text x="2986" y="1726" class="persWord" direction="rtl" unicode-bidi="plaintext">صد هزار</text>
-    <text x="3266" y="1726" class="cell">sad hezâr</text>
-    <text x="3466" y="1726" class="cell">yüz min</text>
+    <text x="2616" y="1080" class="cell">620 →</text>
+    <text x="2760" y="1080" class="pers">۶۲۰</text>
+    <text x="3635" y="1080" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">ششصد و بیست</text>
+    <text x="3200" y="1080" class="cell">šešsad o bist</text>
 
-    <text x="2616" y="1784" class="cell">1.000.000</text>
-    <text x="2796" y="1784" class="pers">۱٬۰۰۰٬۰۰۰</text>
-    <text x="2986" y="1784" class="persWord" direction="rtl" unicode-bidi="plaintext">یک میلیون</text>
-    <text x="3266" y="1784" class="cell">yek milyun</text>
-    <text x="3466" y="1784" class="cell">bir milyon</text>
+    <text x="2616" y="1130" class="cell">748 →</text>
+    <text x="2760" y="1130" class="pers">۷۴۸</text>
+    <text x="3635" y="1130" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">هفتصد و چهل و هشت</text>
+    <text x="3200" y="1130" class="cell">haftsad o çehel o hešt</text>
   </g>
-
-  <!-- RIGHT: Minlərlə qayda -->
-  <text x="2616" y="1885" class="hdr">📌 Minlərlə qayda</text>
-  <line x1="2616" y1="1915" x2="3650" y2="1915" class="line"/>
-  <text x="2616" y="1960" class="note">Minlər də eyni sistemdir:</text>
 
   <g>
-    <text x="2616" y="2020" class="cell">1.234 →</text>
-    <text x="2796" y="2020" class="pers">۱۲۳۴</text>
-    <text x="2986" y="2020" class="persWord" direction="rtl" unicode-bidi="plaintext">هزار و دویست و سی و چهار</text>
-    <text x="2616" y="2070" class="cell">hezâr o divist o si o çahâr</text>
-
-    <text x="2616" y="2125" class="cell">10.501 →</text>
-    <text x="2796" y="2125" class="pers">۱۰۵۰۱</text>
-    <text x="2986" y="2125" class="persWord" direction="rtl" unicode-bidi="plaintext">ده هزار و پانصد و یک</text>
-    <text x="2616" y="2175" class="cell" opacity="0.0">.</text>
+    <rect x="2616" y="1170" width="1034" height="110" rx="24" ry="24" fill="#000000" opacity="0.22" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+    <text x="2648" y="1212" class="note">⚠️ Burda heç vaxt vergül, tire, başqa bağlayıcı YOXDUR.</text>
+    <text x="2648" y="1250" class="note">Hər şey <tspan class="accent">و</tspan> ilə bağlanır.</text>
   </g>
 
-  <!-- Footer watermark label (stronger) -->
+  <text x="2616" y="1340" class="hdr">🔢 [Min və yuxarısı]</text>
+  <line x1="2616" y1="1370" x2="3650" y2="1370" class="line"/>
+
+  <g>
+    <text x="2616" y="1415" class="cell">1000</text>
+    <text x="2796" y="1415" class="pers">۱۰۰۰</text>
+    <text x="3180" y="1415" class="persWord" direction="rtl" unicode-bidi="plaintext">هزار</text>
+    <text x="3266" y="1415" class="cell">hezâr</text>
+    <text x="3466" y="1415" class="cell">min</text>
+
+    <text x="2616" y="1465" class="cell">10.000</text>
+    <text x="2796" y="1465" class="pers">۱۰٬۰۰۰</text>
+    <text x="3180" y="1465" class="persWord" direction="rtl" unicode-bidi="plaintext">ده هزار</text>
+    <text x="3266" y="1465" class="cell">dah hezâr</text>
+    <text x="3466" y="1465" class="cell">on min</text>
+
+    <text x="2616" y="1515" class="cell">100.000</text>
+    <text x="2796" y="1515" class="pers">۱۰۰٬۰۰۰</text>
+    <text x="3180" y="1515" class="persWord" direction="rtl" unicode-bidi="plaintext">صد هزار</text>
+    <text x="3266" y="1515" class="cell">sad hezâr</text>
+    <text x="3466" y="1515" class="cell">yüz min</text>
+
+    <text x="2616" y="1565" class="cell">1.000.000</text>
+    <text x="2796" y="1565" class="pers">۱٬۰۰۰٬۰۰۰</text>
+    <text x="3180" y="1565" class="persWord" direction="rtl" unicode-bidi="plaintext">یک میلیون</text>
+    <text x="3266" y="1565" class="cell">yek milyun</text>
+    <text x="3466" y="1565" class="cell">bir milyon</text>
+  </g>
+
+  <text x="2616" y="1635" class="hdr">📌 Minlərlə qayda</text>
+  <line x1="2616" y1="1665" x2="3650" y2="1665" class="line"/>
+  <text x="2616" y="1705" class="note">Minlər də eyni sistemdir:</text>
+
+  <g>
+    <text x="2616" y="1755" class="cell">1.234 →</text>
+    <text x="2796" y="1755" class="pers">۱۲۳۴</text>
+    <text x="3635" y="1755" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">هزار و دویست و سی و چهار</text>
+    <text x="2616" y="1795" class="small">hezâr o divist o si o çahâr</text>
+
+    <text x="2616" y="1840" class="cell">10.501 →</text>
+    <text x="2796" y="1840" class="pers">۱۰۵۰۱</text>
+    <text x="3635" y="1840" class="persWord" direction="rtl" unicode-bidi="plaintext" text-anchor="end">ده هزار و پانصد و یک</text>
+    <text x="2616" y="1880" class="small">dah hezâr o pânsad o yek</text>
+  </g>
+
+  <!-- Footer (removed bottom-left "Watermark: 🍂 lamvav") -->
   <g>
     <rect x="140" y="2015" width="3560" height="55" rx="18" ry="18" fill="#000000" opacity="0.18" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
-    <text x="170" y="2053" class="small" fill="#FFFFFF" opacity="0.88">Watermark: 🍂 lamvav</text>
     <text x="3670" y="2053" text-anchor="end" class="small" fill="#FFFFFF" opacity="0.88"
           direction="rtl" unicode-bidi="plaintext">یا علی (ع) • یا فاطمة الزهراء (س)</text>
   </g>
